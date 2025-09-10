@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mes Compétences</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Conteneur des bulles */
+    .bubbles-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      padding: 2rem 1rem;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    /* Bulles individuelles */
+    .bubble {
+      background: linear-gradient(135deg, #ff7e5f, #feb47b);
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      box-shadow: 0 3px 8px rgba(255,126,95,0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: default;
+      white-space: nowrap;
+    }
+
+    .bubble:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 16px rgba(255,126,95,0.7);
+    }
+
+    /* Liens blancs dans les bulles */
+    .bubble a {
+      color: #fff;
+      text-decoration: none;
+    }
+
+    .bubble a:hover {
+      text-decoration: underline;
+    }
+
+    /* Titres des sections */
+    .section-title {
+      color: #ff7e5f;
+      font-family: 'Playfair Display', serif;
+      text-align: center;
+      margin: 2rem 0 1rem 0;
+      font-size: 1.8rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Mon Portfolio</div>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="compétences.html" class="active">Compétences</a>
+      <a href="about.html">À propos</a>
+      <a href="attestations.html">Attestations</a>
+    </div>
+  </nav>
+
+  <header class="page-header" style="text-align:center; margin: 2rem auto;">
+    <h1>Mes Compétences</h1>
+    <div class="transparent-block">
+      <p style="color: #fff;">Toutes mes compétences classées par domaine et importance.</p>
+    </div>
+  </header>
+
+  <main>
+
+    <h2 class="section-title">Compétences mises en œuvre</h2>
+    <div class="bubbles-container">
+      <div class="bubble">Configuration VLAN</div>
+      <div class="bubble">Routage inter-VLAN</div>
+      <div class="bubble">Pare-feu</div>
+      <div class="bubble">Packet-Tracer</div>
+      <div class="bubble">Sécurité réseau</div>
+      <div class="bubble">Topologie réseau</div>
+      <div class="bubble">Développement : HTML, CSS, PHP</div>
+      <div class="bubble">Travail en équipe</div>
+      <div class="bubble">Compréhension des attentes</div>
+      <div class="bubble">Création de schémas explicatifs</div>
+      <div class="bubble">Coordination</div>
+      <div class="bubble">Organisation</div>
+      <div class="bubble">Développement : HTTP, CSS</div>
+      <div class="bubble">Collaboration</div>
+      <div class="bubble">Apprentissage rapide</div>
+      <div class="bubble">Création de scripts</div>
+      <div class="bubble">Codage : Python</div>
+      <div class="bubble">Compréhension des consignes</div>
+      <div class="bubble">Traitement du signal</div>
+      <div class="bubble">Configuration WEB</div>
+      <div class="bubble">Regroupage d'informations</div>
+      <div class="bubble">Communication claire</div>
+      <div class="bubble">Identification et configuration d'interfaces réseaux</div>
+      <div class="bubble">Différentiation adresses privées/public</div>
+      <div class="bubble">Utilisation de service WEB</div>
+      <div class="bubble">Analyse du chemin de paquets</div>
+      <div class="bubble">Utilisation de Wireshark</div>
+      <div class="bubble">Évaluation de consommation énergétique</div>
+      <div class="bubble">Observation</div>
+      <div class="bubble">Développement Python</div>
+      <div class="bubble">Compréhension</div>
+      <div class="bubble">Optimisation des tâches</div>
+      <div class="bubble">L'entraide</div>
+      <div class="bubble">La communication</div>
+      <div class="bubble">L'écoute</div>
+      <div class="bubble">La transmission de valeurs</div>
+      <div class="bubble">L'envie</div>
+      <div class="bubble">La persévérance</div>
+      <div class="bubble">Le partage</div>
+      <div class="bubble">La patience</div>
+    </div>
+
+  </main>
+
+  <footer style="text-align:center; padding:2rem 1rem; background:#111; color:#fff;">
+    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+  </footer>
+
+</body>
+</html>
