@@ -586,14 +586,6 @@ button {
   stroke: #fff;
 }
 
-.cursor1 {
-  width: 20px;
-  height: 20px;
-  border: 2px solid red;
-  border-radius: 50%;
-  position: fixed;
-  pointer-events: none; /* important pour cliquer à travers */
-  transform: translate(-50%, -50%);
-}
+
 
 
