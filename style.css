@@ -11,7 +11,6 @@
 }
 
 body {
-  cursor: none;
   font-family: var(--font);
   background: var(--bg-image) no-repeat center center fixed;
   background-size: cover;
@@ -596,4 +595,5 @@ button {
   pointer-events: none; /* important pour cliquer à travers */
   transform: translate(-50%, -50%);
 }
+
 
