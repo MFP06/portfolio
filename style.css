@@ -554,7 +554,7 @@ button {
   box-sizing: border-box;
 }
 
-.page-header .transparent-block p {
+.transparent-block p {
   color: #fff;
 }
 
@@ -589,6 +589,7 @@ button {
 .titles {
   color: var(--accent)
 }
+
 
 
 
