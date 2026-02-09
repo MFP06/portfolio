@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio - Accueil</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Mon Portfolio</div>
+    <div class="nav-links">
+      <a href="index.html" class="active">Accueil</a>
+      <a href="projets.html">Projets</a>
+      <a href="compétences.html">Compétences</a>
+      <a href="about.html">À propos</a>
+      <a href="attestations.html">Attestations</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+      <div class="about-left">
+        <img src="images/photo.png" alt="Photo de profil" class="profile-photo" />
+      </div>
+
+      <h1>Bonjour et bienvenue sur mon Portfolio</h1>
+
+      <div class="transparent-block-2">
+        <p>Actuellement étudiant en réseaux et télécommunications, je suis passionné par l’univers de l’informatique.</p>
+      </div>
+      <div class="transparent-block-2">
+        <p>Curieux de découvrir mes projets, mes compétences ou encore ce qui me motive au quotidien ?</p>
+      </div>
+      <div class="transparent-block-2">
+        <p>N'hésitez pas à explorer mon site, vous y trouverez un aperçu concret de mon parcours et de mes passions !</p>
+      </div>
+  </section>
+
+  <footer>
+    <section class="contact-footer">
+      <h3>Contactez-moi</h3>
+      <form action="send_mail.php" method="post" class="contact-form">
+        <input type="text" name="name" placeholder="Votre nom" required />
+        <input type="email" name="email" placeholder="Votre email" required />
+        <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
+        <button type="submit">Envoyer</button>
+      </form>
+    </section>
+  </footer>
+
+</body>
+</html>
