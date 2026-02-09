@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Création d'un portfolio (SAE 25)</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Mon Portfolio</div>
+    <div class="nav-links">
+      <a href="index.html">Accueil</a>
+      <a href="projets.html" class="active">Projets</a>
+      <a href="compétences.html">Compétences</a>
+      <a href="about.html">À propos</a>
+      <a href="attestations.html">Attestations</a>
+    </div>
+  </nav>
+
+  <!-- Flèche de retour stylisée -->
+  <a href="projet_rt.html" class="back-arrow">
+    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
+      <path d="M15 18l-6-6 6-6" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Retour aux projets R&T
+  </a>
+
+  <header class="page-header" style="max-width: 900px; margin: 1rem auto 2rem auto; text-align: center;">
+    <h1>Création d'un portfolio (SAE 25)</h1>
+    <div class="transparent-block">
+      <p style="font-size: 1.1rem; color: var(--text-secondary); margin-top: 0.5rem;">
+        Mise en place d’un site web pour nous présenter sous un angle informatique
+      </p>
+    </div>
+  </header>
+
+  <main style="text-align:center; padding: 2rem 1rem; max-width: 900px; margin: auto;">
+
+    <img src="images/portfolio.jpeg" alt="Logo Portfolio" style="width:250px; margin-bottom: 1.5rem; border-radius: 12px; border: 3px solid var(--accent); box-shadow: 0 0 12px var(--accent-light);" />
+
+    <section style="font-size: 1.1rem; line-height: 1.8; text-align: justify; max-width: 700px; margin: auto;">
+      <p>Dans le cadre de la SAE 25, nous avons réalisé un portfolio numérique en utilisant les langages HTML et CSS. L’objectif était de créer un site web personnel permettant de présenter notre parcours, nos compétences et nos projets réalisés durant la formation. Ce portfolio agit comme une vitrine professionnelle accessible en ligne, offrant une première impression claire et structurée de notre profil.</p>
+      <p>Ce projet nous a permis de nous initier concrètement au développement web statique, à l'organisation des contenus, au design responsive ainsi qu’aux principes de navigation claire et ergonomique. Il nous a aussi appris à structurer l'information de manière efficace et à valoriser nos expériences dans un cadre visuellement cohérent. En plus de renforcer nos compétences techniques, cette SAE nous a sensibilisés à l’importance de construire une identité numérique professionnelle dans le domaine de l’informatique.</p>
+    </section>
+
+    <section class="resource-links" style="margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
+      <p><a href="http://localhost/portfolio/index.html" style="color: var(--accent); font-weight: 600;">Ici vous pouvez trouver un lien menant vers le site de ce projet.</a></p>
+    </section>
+
+    <h2 style="margin-top: 3rem; color: var(--accent); font-size: 1.8rem;">Compétences mises en œuvre</h2>
+
+    <ul class="skills-list" style="max-width: 400px; margin: auto; padding-left: 0;">
+      <li class="skill-block"><a href="compétences.html#web" class="white-link">Configuration WEB</a></li>
+      <li class="skill-block"><a href="compétences.html#infos" class="white-link">Regroupage d'informations</a></li>
+      <li class="skill-block"><a href="compétences.html#communication" class="white-link">Communication claire</a></li>
+    </ul>
+
+  </main>
+
+</body>
+</html>
