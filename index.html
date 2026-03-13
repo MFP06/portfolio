@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfolio - Accueil</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="site.js" defer></script>
 </head>
 <body>
 
@@ -14,27 +15,33 @@
       <a href="index.html" class="active">Accueil</a>
       <a href="projets.html">Projets</a>
       <a href="compétences.html">Compétences</a>
-      <a href="about.html">À propos</a>
+      <a href="projet_pro.html">Expérience professionnelle</a>
       <a href="attestations.html">Attestations</a>
+      <a href="about.html">À propos</a>
     </div>
   </nav>
 
   <section class="hero">
-      <div class="about-left">
-        <img src="images/photo.png" alt="Photo de profil" class="profile-photo" />
-      </div>
+    <div class="about-left">
+      <img src="images/photo.png" alt="Photo de profil" class="profile-photo" />
+    </div>
 
-      <h1>Bonjour et bienvenue sur mon Portfolio</h1>
+    <p class="hero-subtitle">Portfolio personnel en réseaux, télécommunications et développement</p>
+    <div class="hero-year">
+      <span>Année en cours</span>
+      <strong data-current-year>2026</strong>
+    </div>
+    <h1>Bonjour et bienvenue sur mon portfolio</h1>
 
-      <div class="transparent-block-2">
-        <p>Actuellement étudiant en réseaux et télécommunications, je suis passionné par l’univers de l’informatique.</p>
-      </div>
-      <div class="transparent-block-2">
-        <p>Curieux de découvrir mes projets, mes compétences ou encore ce qui me motive au quotidien ?</p>
-      </div>
-      <div class="transparent-block-2">
-        <p>N'hésitez pas à explorer mon site, vous y trouverez un aperçu concret de mon parcours et de mes passions !</p>
-      </div>
+    <div class="transparent-block-2">
+      <p>Actuellement étudiant en réseaux et télécommunications, je développe un profil polyvalent entre infrastructure, web et sens du service.</p>
+    </div>
+    <div class="transparent-block-2">
+      <p>Ce site présente mes projets, mes compétences classées par domaine et mon expérience professionnelle de façon claire et visuelle.</p>
+    </div>
+    <div class="transparent-block-2">
+      <p>Vous y trouverez un aperçu concret de mon parcours, de mes réalisations et de ce que je peux apporter dans un cadre professionnel.</p>
+    </div>
   </section>
 
   <footer>
@@ -46,6 +53,9 @@
         <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
         <button type="submit">Envoyer</button>
       </form>
+    </section>
+    <section class="site-footer">
+      <p>&copy; <span data-current-year>2026</span> Mon Portfolio. Tous droits réservés.</p>
     </section>
   </footer>
 

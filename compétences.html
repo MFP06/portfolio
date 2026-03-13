@@ -5,56 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mes Compétences</title>
   <link rel="stylesheet" href="style.css" />
-  <style>
-    /* Conteneur des bulles */
-    .bubbles-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 12px;
-      padding: 2rem 1rem;
-      max-width: 1000px;
-      margin: auto;
-    }
-
-    /* Bulles individuelles */
-    .bubble {
-      background: linear-gradient(135deg, #ff7e5f, #feb47b);
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 50px;
-      font-weight: 600;
-      font-size: 1rem;
-      box-shadow: 0 3px 8px rgba(255,126,95,0.5);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      cursor: default;
-      white-space: nowrap;
-    }
-
-    .bubble:hover {
-      transform: scale(1.1);
-      box-shadow: 0 6px 16px rgba(255,126,95,0.7);
-    }
-
-    /* Liens blancs dans les bulles */
-    .bubble a {
-      color: #fff;
-      text-decoration: none;
-    }
-
-    .bubble a:hover {
-      text-decoration: underline;
-    }
-
-    /* Titres des sections */
-    .section-title {
-      color: #ff7e5f;
-      font-family: 'Playfair Display', serif;
-      text-align: center;
-      margin: 2rem 0 1rem 0;
-      font-size: 1.8rem;
-    }
-  </style>
+  <script src="site.js" defer></script>
 </head>
 <body>
 
@@ -64,68 +15,227 @@
       <a href="index.html">Accueil</a>
       <a href="projets.html">Projets</a>
       <a href="compétences.html" class="active">Compétences</a>
-      <a href="about.html">À propos</a>
+      <a href="projet_pro.html">Expérience professionnelle</a>
       <a href="attestations.html">Attestations</a>
+      <a href="about.html">À propos</a>
     </div>
   </nav>
 
-  <header class="page-header" style="text-align:center; margin: 2rem auto;">
-    <h1>Mes Compétences</h1>
+  <header class="page-header">
+    <h1>Mes compétences</h1>
     <div class="transparent-block">
-      <p style="color: #fff;">Toutes mes compétences classées par domaine et importance.</p>
+      <p>Toutes mes compétences sont regroupées par catégorie avec un niveau estimé et un lien vers l’expérience qui les a réellement développées.</p>
     </div>
   </header>
 
   <main>
+    <section class="skills-intro">
+      <p>Cette page me permet de montrer non seulement ce que je sais faire, mais aussi dans quel contexte j’ai appris à le faire. Cela donne une lecture plus concrète de mon profil.</p>
+    </section>
 
-    <h2 class="section-title">Compétences mises en œuvre</h2>
-    <div class="bubbles-container">
-      <div class="bubble">Configuration VLAN</div>
-      <div class="bubble">Routage inter-VLAN</div>
-      <div class="bubble">Pare-feu</div>
-      <div class="bubble">Packet-Tracer</div>
-      <div class="bubble">Sécurité réseau</div>
-      <div class="bubble">Topologie réseau</div>
-      <div class="bubble">Développement : HTML, CSS, PHP</div>
-      <div class="bubble">Travail en équipe</div>
-      <div class="bubble">Compréhension des attentes</div>
-      <div class="bubble">Création de schémas explicatifs</div>
-      <div class="bubble">Coordination</div>
-      <div class="bubble">Organisation</div>
-      <div class="bubble">Développement : HTTP, CSS</div>
-      <div class="bubble">Collaboration</div>
-      <div class="bubble">Apprentissage rapide</div>
-      <div class="bubble">Création de scripts</div>
-      <div class="bubble">Codage : Python</div>
-      <div class="bubble">Compréhension des consignes</div>
-      <div class="bubble">Traitement du signal</div>
-      <div class="bubble">Configuration WEB</div>
-      <div class="bubble">Regroupage d'informations</div>
-      <div class="bubble">Communication claire</div>
-      <div class="bubble">Identification et configuration d'interfaces réseaux</div>
-      <div class="bubble">Différentiation adresses privées/public</div>
-      <div class="bubble">Utilisation de service WEB</div>
-      <div class="bubble">Analyse du chemin de paquets</div>
-      <div class="bubble">Utilisation de Wireshark</div>
-      <div class="bubble">Évaluation de consommation énergétique</div>
-      <div class="bubble">Observation</div>
-      <div class="bubble">Développement Python</div>
-      <div class="bubble">Compréhension</div>
-      <div class="bubble">Optimisation des tâches</div>
-      <div class="bubble">L'entraide</div>
-      <div class="bubble">La communication</div>
-      <div class="bubble">L'écoute</div>
-      <div class="bubble">La transmission de valeurs</div>
-      <div class="bubble">L'envie</div>
-      <div class="bubble">La persévérance</div>
-      <div class="bubble">Le partage</div>
-      <div class="bubble">La patience</div>
-    </div>
+    <section class="skills-layout">
+      <article class="skills-category" id="reseaux">
+        <h2>Réseaux & systèmes</h2>
+        <p>Compétences construites principalement pendant la formation R&T et les projets techniques orientés infrastructure.</p>
+        <div class="skills-category-grid">
+          <article class="skill-card" id="vlan">
+            <h3>Configuration VLAN</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Structurer un réseau, séparer les flux et sécuriser les accès sur une topologie simulée.</p>
+            <a href="projet1.html" class="skill-link">Voir le projet SAE21</a>
+          </article>
+          <article class="skill-card" id="intervlan">
+            <h3>Routage inter-VLAN</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Mettre en communication plusieurs segments réseau avec une logique propre et lisible.</p>
+            <a href="projet1.html" class="skill-link">Comprendre comment je l’ai développé</a>
+          </article>
+          <article class="skill-card" id="parefeu">
+            <h3>Pare-feu</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Définir des règles simples de filtrage pour contrôler les échanges entre les zones du réseau.</p>
+            <a href="projet1.html" class="skill-link">Voir la mise en pratique</a>
+          </article>
+          <article class="skill-card" id="packettracer">
+            <h3>Packet Tracer</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Créer, configurer et tester des topologies complètes dans un environnement pédagogique.</p>
+            <a href="projet1.html" class="skill-link">Projet de simulation réseau</a>
+          </article>
+          <article class="skill-card" id="securite">
+            <h3>Sécurité réseau</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Appliquer les bases de segmentation, d’isolement des flux et de limitation des accès.</p>
+            <a href="projet1.html" class="skill-link">Découvrir le contexte</a>
+          </article>
+          <article class="skill-card" id="topologie">
+            <h3>Topologie réseau</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Comprendre l’organisation d’une architecture et savoir la représenter clairement.</p>
+            <a href="projet6.html" class="skill-link">Voir les premiers travaux réseau</a>
+          </article>
+          <article class="skill-card" id="interfaces">
+            <h3>Interfaces réseau</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Identifier les interfaces, comprendre leur rôle et les configurer correctement.</p>
+            <a href="projet6.html" class="skill-link">Voir la SAE 12</a>
+          </article>
+          <article class="skill-card" id="adresses">
+            <h3>Adressage IP</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Distinguer adresses privées et publiques et analyser le cheminement réseau.</p>
+            <a href="projet6.html" class="skill-link">Voir la partie réseau de base</a>
+          </article>
+          <article class="skill-card" id="analyse-paquets">
+            <h3>Analyse de paquets</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Observer la circulation de données et interpréter les échanges sur le réseau.</p>
+            <a href="projet6.html" class="skill-link">Voir les exercices associés</a>
+          </article>
+          <article class="skill-card" id="wireshark">
+            <h3>Wireshark</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Inspecter un trafic réel ou simulé pour mieux comprendre les protocoles.</p>
+            <a href="projet6.html" class="skill-link">Voir l’apprentissage associé</a>
+          </article>
+        </div>
+      </article>
 
+      <article class="skills-category" id="developpement">
+        <h2>Développement web & scripting</h2>
+        <p>Compétences développées sur des projets concrets, du site statique au web dynamique, jusqu’au scripting Python.</p>
+        <div class="skills-category-grid">
+          <article class="skill-card" id="dev">
+            <h3>HTML / CSS / PHP</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Créer une interface claire, structurée et adaptée à un besoin utilisateur.</p>
+            <a href="projet2.html" class="skill-link">Voir le projet client</a>
+          </article>
+          <article class="skill-card" id="web">
+            <h3>Configuration web</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Assembler une vitrine cohérente, organisée et accessible avec une navigation simple.</p>
+            <a href="projet5.html" class="skill-link">Voir la création du portfolio</a>
+          </article>
+          <article class="skill-card" id="python">
+            <h3>Python</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Automatiser, manipuler des données et construire des scripts utiles à l’analyse.</p>
+            <a href="projet4.html" class="skill-link">Voir le projet signal</a>
+          </article>
+          <article class="skill-card" id="scripts">
+            <h3>Création de scripts</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Découper un besoin en étapes logiques et produire un script lisible pour y répondre.</p>
+            <a href="projet4.html" class="skill-link">Voir comment la compétence a été développée</a>
+          </article>
+          <article class="skill-card" id="signal">
+            <h3>Traitement du signal</h3>
+            <span class="skill-level">Niveau débutant à intermédiaire</span>
+            <p>Mesurer, modifier et représenter visuellement des signaux à l’aide d’outils numériques.</p>
+            <a href="projet4.html" class="skill-link">Découvrir la SAE 22</a>
+          </article>
+          <article class="skill-card" id="services-web">
+            <h3>Services web</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Comprendre les bases de fonctionnement d’un service web et de sa mise à disposition.</p>
+            <a href="projet6.html" class="skill-link">Voir les manipulations réseau</a>
+          </article>
+          <article class="skill-card" id="infos">
+            <h3>Structuration d’informations</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Organiser le contenu pour qu’il reste lisible, hiérarchisé et pertinent pour l’utilisateur.</p>
+            <a href="projet5.html" class="skill-link">Voir le travail sur le portfolio</a>
+          </article>
+        </div>
+      </article>
+
+      <article class="skills-category" id="organisation">
+        <h2>Méthode, collaboration & qualités humaines</h2>
+        <p>Compétences développées à la fois en projet, en contexte professionnel et dans mes engagements bénévoles.</p>
+        <div class="skills-category-grid">
+          <article class="skill-card" id="equipe">
+            <h3>Travail en équipe</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Avancer avec d’autres personnes, répartir les rôles et garder un objectif commun clair.</p>
+            <a href="projet2.html" class="skill-link">Voir le projet collaboratif</a>
+          </article>
+          <article class="skill-card" id="coordination">
+            <h3>Coordination</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Relier les actions, suivre les besoins et maintenir une progression cohérente.</p>
+            <a href="projet2.html" class="skill-link">Voir comment je l’ai développée</a>
+          </article>
+          <article class="skill-card" id="communication">
+            <h3>Communication claire</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Présenter une idée simplement, écouter les retours et ajuster le résultat attendu.</p>
+            <a href="projet5.html" class="skill-link">Voir un exemple concret</a>
+          </article>
+          <article class="skill-card" id="attentes">
+            <h3>Compréhension des attentes</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Analyser la demande, cadrer un besoin et produire une réponse adaptée.</p>
+            <a href="projet2.html" class="skill-link">Voir le contexte client</a>
+          </article>
+          <article class="skill-card" id="schemas">
+            <h3>Schématisation</h3>
+            <span class="skill-level">Niveau intermédiaire</span>
+            <p>Transformer une explication complexe en représentation plus simple à lire.</p>
+            <a href="projet2.html" class="skill-link">Voir où cette compétence est utilisée</a>
+          </article>
+          <article class="skill-card" id="observation">
+            <h3>Observation</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Regarder, comprendre le fonctionnement d’une structure et apprendre vite dans un nouvel environnement.</p>
+            <a href="projet9.html" class="skill-link">Voir le stage de découverte</a>
+          </article>
+          <article class="skill-card" id="analyse">
+            <h3>Analyse & compréhension</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Prendre du recul sur une situation et identifier les actions les plus utiles.</p>
+            <a href="projet10.html" class="skill-link">Voir l’expérience professionnelle</a>
+          </article>
+          <article class="skill-card" id="entraide">
+            <h3>Entraide</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Partager les bonnes pratiques, accompagner et transmettre dans un cadre collectif.</p>
+            <a href="projet7.html" class="skill-link">Voir l’engagement UNC</a>
+          </article>
+          <article class="skill-card" id="ecoute">
+            <h3>Écoute</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Comprendre les besoins des autres avant d’agir, d’expliquer ou de proposer.</p>
+            <a href="projet7.html" class="skill-link">Voir le contexte bénévole</a>
+          </article>
+          <article class="skill-card" id="transmission">
+            <h3>Transmission de valeurs</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Faire passer des repères, de la méthode et un état d’esprit utile aux plus jeunes.</p>
+            <a href="projet7.html" class="skill-link">Voir comment cette compétence s’est construite</a>
+          </article>
+          <article class="skill-card" id="partage">
+            <h3>Partage</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>Mettre ses connaissances au service d’un groupe et contribuer à une progression commune.</p>
+            <a href="projet8.html" class="skill-link">Voir l’expérience en école</a>
+          </article>
+          <article class="skill-card" id="patience">
+            <h3>Patience</h3>
+            <span class="skill-level">Niveau avancé</span>
+            <p>S’adapter au rythme d’apprentissage, expliquer différemment et rester constant.</p>
+            <a href="projet8.html" class="skill-link">Voir le développement de cette compétence</a>
+          </article>
+        </div>
+      </article>
+    </section>
   </main>
 
-  <footer style="text-align:center; padding:2rem 1rem; background:#111; color:#fff;">
-    <p>&copy; 2025 Mon Portfolio. Tous droits réservés.</p>
+  <footer>
+    <section class="site-footer">
+      <p>&copy; <span data-current-year>2026</span> Mon Portfolio. Tous droits réservés.</p>
+      <p>Compétences classées par domaine pour une lecture plus claire de mon profil.</p>
+    </section>
   </footer>
 
 </body>

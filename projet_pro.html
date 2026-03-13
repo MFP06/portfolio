@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Parcours professionnels</title>
+  <title>Expérience professionnelle</title>
   <link rel="stylesheet" href="style.css" />
+  <script src="site.js" defer></script>
 </head>
 <body>
 
@@ -12,49 +13,120 @@
     <div class="logo">Mon Portfolio</div>
     <div class="nav-links">
       <a href="index.html">Accueil</a>
-      <a href="projets.html" class="active">Projets</a>
-      <a href="about.html">À propos</a>
+      <a href="projets.html">Projets</a>
+      <a href="compétences.html">Compétences</a>
+      <a href="projet_pro.html" class="active">Expérience professionnelle</a>
       <a href="attestations.html">Attestations</a>
+      <a href="about.html">À propos</a>
     </div>
   </nav>
 
-  <a href="projets.html" class="back-arrow">
-    <svg class="arrow-icon" width="24" height="24" viewBox="0 0 24 24" fill="none">
-      <path d="M15 18l-6-6 6-6" stroke="#f39c12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    </svg>
-    Retour aux projets
-  </a>
-
   <header class="page-header">
-    <h1>Parcours professionnels</h1>
+    <h1>Expérience professionnelle</h1>
     <div class="transparent-block">
-    <p>Stages, alternances et emplois liés au domaine informatique.</p>
+      <p>Cette page regroupe mes missions, mes réalisations et la manière dont mes expériences me préparent à une alternance solide et utile.</p>
     </div>
   </header>
 
   <main>
-    <section class="project-grid">
+    <section class="experience-shell">
+      <article class="experience-highlight">
+        <h2>Vue d’ensemble</h2>
+        <p>Mes expériences professionnelles m’ont permis de découvrir des environnements variés, d’observer des méthodes de travail concrètes et de gagner en autonomie. Même sur des missions courtes, j’ai retenu l’importance de la rigueur, de la discrétion, de l’organisation et de l’adaptation rapide.</p>
+        <div class="experience-meta">
+          <span>Découverte du monde professionnel</span>
+          <span>Sens du service</span>
+          <span>Organisation</span>
+          <span>Adaptation</span>
+        </div>
+      </article>
 
-      <a href="projet9.html" class="project-card">
-        <img src="images/orange.png" alt="Stage en développement" />
-        <h2>Stage orange (4eme)</h2>
-        <p>Stagiaire</p>
-      </a>
+      <section class="experience-list">
+        <article class="experience-card">
+          <h3>Stage d’observation chez Orange</h3>
+          <p><strong>Rôle :</strong> stagiaire en découverte d’entreprise.</p>
+          <p>Cette première immersion m’a permis de comprendre le fonctionnement général d’une structure professionnelle, de découvrir l’organisation de différents services et de voir comment les équipes coopèrent au quotidien.</p>
+          <div class="experience-columns">
+            <div>
+              <h4>Missions</h4>
+              <ul>
+                <li>Accueil et observation du fonctionnement des services.</li>
+                <li>Archivage, rangement et soutien sur des tâches simples.</li>
+                <li>Accompagnement d’un salarié dans ses activités courantes.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Réalisations</h4>
+              <ul>
+                <li>Découverte structurée des métiers et de l’organisation interne.</li>
+                <li>Première compréhension des attentes en milieu professionnel.</li>
+                <li>Développement du sens de l’observation et du sérieux.</li>
+              </ul>
+            </div>
+          </div>
+          <p><a href="projet9.html" class="skill-link">Voir la fiche détaillée de l’expérience</a></p>
+        </article>
 
-      <a href="projet10.html" class="project-card">
-        <img src="images/batimed.jpg" alt="Alternance réseau" />
-        <h2>Job d'été - Bati Mediterannee - Nice</h2>
-        <p>Bureautique</p>
-      </a>
+        <article class="experience-card">
+          <h3>Job d’été chez Bati Méditerranée</h3>
+          <p><strong>Rôle :</strong> appui bureautique, administratif et opérationnel.</p>
+          <p>Cette expérience a été plus responsabilisante. Elle m’a demandé d’intervenir sur des tâches variées, de m’adapter aux besoins du moment et de garder une bonne qualité d’exécution même lorsque les sujets changeaient rapidement.</p>
+          <div class="experience-columns">
+            <div>
+              <h4>Missions</h4>
+              <ul>
+                <li>Diffusion d’annonces pour soutenir le recrutement.</li>
+                <li>Création d’univers visuels adaptés à différents projets.</li>
+                <li>Collecte, classement et archivage de documents.</li>
+                <li>Suivi de demandes liées aux installations et au matériel.</li>
+              </ul>
+            </div>
+            <div>
+              <h4>Réalisations</h4>
+              <ul>
+                <li>Renforcement de l’organisation administrative.</li>
+                <li>Montée en autonomie sur des tâches confiées en continu.</li>
+                <li>Développement de réflexes de méthode, d’analyse et de priorisation.</li>
+              </ul>
+            </div>
+          </div>
+          <p><a href="projet10.html" class="skill-link">Voir la fiche détaillée de l’expérience</a></p>
+        </article>
+      </section>
 
+      <article class="experience-focus">
+        <h2>Focus alternance</h2>
+        <p>Je n’aborde pas l’alternance comme une simple suite logique de mes études, mais comme un cadre exigeant dans lequel je peux devenir rapidement utile. Mes expériences précédentes m’ont appris à intégrer une équipe, à respecter un fonctionnement établi et à prendre en charge des tâches concrètes avec sérieux.</p>
+        <p><strong>Ce que j’ai déjà construit pour l’alternance :</strong> de la rigueur dans l’exécution, une capacité d’adaptation, une bonne base technique en réseaux et en web, ainsi qu’un vrai sens du travail bien fait.</p>
+        <p><strong>Ce que je veux y développer davantage :</strong> la prise de responsabilités techniques, la résolution de problèmes sur le terrain, la communication avec des interlocuteurs variés et la progression dans un environnement professionnel durable.</p>
+        <div class="experience-columns">
+          <div>
+            <h4>Apports concrets</h4>
+            <ul>
+              <li>Une base réseau déjà opérationnelle sur les fondamentaux.</li>
+              <li>Une capacité à apprendre vite dans un nouvel environnement.</li>
+              <li>Une approche sérieuse, appliquée et structurée.</li>
+            </ul>
+          </div>
+          <div>
+            <h4>Valeur attendue en entreprise</h4>
+            <ul>
+              <li>Être rapidement fiable sur les missions confiées.</li>
+              <li>Gagner en autonomie sans perdre la qualité d’exécution.</li>
+              <li>Transformer la théorie en réalisations utiles.</li>
+            </ul>
+          </div>
+        </div>
+      </article>
     </section>
   </main>
 
- <footer style="background-color:#222; color:#eee; padding: 1.5rem; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 0.9rem;">
-  <p>© 2025 Mon Portfolio. Tous droits réservés.</p>
-  <p>Crédits et réalisation par <a target="_blank" rel="noopener" style="color:#f39c12; text-decoration:none;">@Falcomer-Pagliano_Matheo</a></p>
-</footer>
-
+  <footer>
+    <section class="site-footer">
+      <p>&copy; <span data-current-year>2026</span> Mon Portfolio. Tous droits réservés.</p>
+      <p>Une page dédiée aux missions, réalisations et à la préparation à l’alternance.</p>
+    </section>
+  </footer>
 
 </body>
 </html>
