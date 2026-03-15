@@ -128,12 +128,17 @@ nav {
 }
 
 .nav-links a {
-  padding: 0.65rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.45rem;
+  padding: 0.55rem 1rem;
   border-radius: 999px;
   border: 1px solid transparent;
   color: var(--white);
   font-size: 0.98rem;
   font-weight: 700;
+  line-height: 1;
 }
 
 .nav-links a:hover,
@@ -141,7 +146,7 @@ nav {
   background: linear-gradient(135deg, rgba(255, 126, 95, 0.2), rgba(254, 180, 123, 0.14));
   border-color: rgba(255, 180, 123, 0.45);
   color: var(--accent-light);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
 }
 
 .hero {
@@ -1170,7 +1175,8 @@ footer {
 }
 
 .home-page .nav-links a {
-  padding: 0.62rem 0.92rem;
+  min-height: 2.25rem;
+  padding: 0.48rem 0.9rem;
   font-size: 0.92rem;
 }
 
@@ -1297,7 +1303,8 @@ footer {
   }
 
   .home-page .nav-links a {
-    padding: 0.42rem 0.68rem;
+    min-height: 2.05rem;
+    padding: 0.34rem 0.66rem;
     font-size: 0.82rem;
   }
 
