@@ -160,14 +160,6 @@ nav {
   padding: 4.5rem 1.5rem 2.5rem;
 }
 
-.home-hero .hero-visual {
-  min-height: auto;
-}
-
-.home-hero .portrait-stage {
-  width: min(380px, 100%);
-}
-
 .hero-grid,
 .home-showcase {
   position: relative;
@@ -499,44 +491,6 @@ main {
 .about-left {
   display: flex;
   justify-content: center;
-}
-
-.about-left-column {
-  align-items: flex-start;
-}
-
-.about-container-refined {
-  gap: 1.6rem;
-}
-
-.about-profile-photo {
-  width: 260px;
-  height: 260px;
-  margin-top: 0.4rem;
-}
-
-.about-content-stack {
-  display: grid;
-  gap: 1.3rem;
-}
-
-.about-content-stack .transparent-block,
-.about-passions-block,
-.about-closing-block {
-  width: 100%;
-  margin: 0;
-  text-align: left;
-}
-
-.about-story-block p:last-child,
-.about-passions-block p:last-child,
-.about-closing-block p:last-child {
-  margin-bottom: 0;
-}
-
-.about-passions-block,
-.about-closing-block {
-  margin-top: 1.4rem;
 }
 
 .about-layout {
@@ -1198,6 +1152,100 @@ footer {
   transform: translateY(-2px);
 }
 
+.home-page nav {
+  padding: 0.75rem 1.35rem;
+}
+
+.home-page .logo {
+  font-size: 1.75rem;
+}
+
+.home-page .nav-links a {
+  padding: 0.55rem 0.85rem;
+  font-size: 0.92rem;
+}
+
+.home-page .home-hero {
+  min-height: calc(100vh - 140px);
+  padding: 1.5rem 1.2rem 0.8rem;
+}
+
+.home-page .hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(260px, 0.8fr);
+  gap: 1.35rem;
+  align-items: center;
+}
+
+.home-page .hero h1 {
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  margin-bottom: 0.8rem;
+}
+
+.home-page .hero-subtitle {
+  margin-bottom: 0.9rem;
+  font-size: 0.96rem;
+}
+
+.home-page .hero-year {
+  margin-bottom: 1rem;
+  padding: 0.55rem 1rem;
+}
+
+.home-page .transparent-block.hero-panel {
+  width: min(680px, 100%);
+  margin: 0.7rem 0 1rem;
+  padding: 1rem 1.2rem;
+}
+
+.home-page .hero-actions {
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.home-page .hero-button {
+  min-width: 180px;
+  padding: 0.82rem 1.05rem;
+}
+
+.home-page .hero-stats {
+  gap: 0.7rem;
+}
+
+.home-page .stat-card {
+  padding: 0.8rem 0.9rem;
+}
+
+.home-page .stat-card strong {
+  font-size: 1.22rem;
+}
+
+.home-page .stat-card span {
+  font-size: 0.86rem;
+}
+
+.home-page .hero-visual {
+  min-height: auto;
+}
+
+.home-page .portrait-stage {
+  width: min(320px, 100%);
+  aspect-ratio: 1 / 1;
+  border-radius: 28px;
+}
+
+.home-page .portrait-stage .profile-photo {
+  width: 220px;
+  height: 220px;
+}
+
+.home-page footer {
+  padding: 0.9rem 1rem;
+}
+
+.home-page .site-footer p {
+  margin-bottom: 0;
+}
+
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -1223,6 +1271,16 @@ footer {
   .hero-grid,
   .home-showcase,
   .feature-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .home-page .home-hero {
+    min-height: auto;
+    padding-top: 2rem;
+    padding-bottom: 1.2rem;
+  }
+
+  .home-page .hero-grid {
     grid-template-columns: 1fr;
   }
 
