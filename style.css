@@ -160,6 +160,14 @@ nav {
   padding: 4.5rem 1.5rem 2.5rem;
 }
 
+.home-hero .hero-visual {
+  min-height: auto;
+}
+
+.home-hero .portrait-stage {
+  width: min(380px, 100%);
+}
+
 .hero-grid,
 .home-showcase {
   position: relative;
@@ -473,6 +481,13 @@ main {
   color: var(--white);
 }
 
+.transparent-block h2,
+.transparent-block-2 h2 {
+  margin: 0.85rem 0 0.75rem;
+  color: var(--title-strong);
+  font-size: clamp(2rem, 3vw, 2.6rem);
+}
+
 .about-container {
   display: grid;
   grid-template-columns: 280px minmax(0, 1fr);
@@ -484,6 +499,44 @@ main {
 .about-left {
   display: flex;
   justify-content: center;
+}
+
+.about-left-column {
+  align-items: flex-start;
+}
+
+.about-container-refined {
+  gap: 1.6rem;
+}
+
+.about-profile-photo {
+  width: 260px;
+  height: 260px;
+  margin-top: 0.4rem;
+}
+
+.about-content-stack {
+  display: grid;
+  gap: 1.3rem;
+}
+
+.about-content-stack .transparent-block,
+.about-passions-block,
+.about-closing-block {
+  width: 100%;
+  margin: 0;
+  text-align: left;
+}
+
+.about-story-block p:last-child,
+.about-passions-block p:last-child,
+.about-closing-block p:last-child {
+  margin-bottom: 0;
+}
+
+.about-passions-block,
+.about-closing-block {
+  margin-top: 1.4rem;
 }
 
 .about-layout {
