@@ -1172,99 +1172,100 @@ footer {
 
 .home-page .home-hero {
   flex: 1 1 auto;
-  min-height: calc(100vh - 150px);
-  padding: 2rem 1.6rem 1rem;
+  min-height: calc(100vh - 96px);
+  padding: 1.2rem 1.8rem 1.6rem;
 }
 
 .home-page .hero-grid {
-  grid-template-columns: minmax(0, 1.05fr) minmax(340px, 0.95fr);
-  gap: 2rem;
-  width: min(1380px, 100%);
+  grid-template-columns: minmax(0, 1.08fr) minmax(400px, 0.92fr);
+  gap: 2.8rem;
+  width: min(1560px, calc(100vw - 96px));
   align-items: center;
 }
 
 .home-page .hero-copy {
   display: grid;
-  gap: 0.8rem;
-  max-width: 860px;
+  gap: 0.95rem;
+  max-width: none;
 }
 
 .home-page .hero h1 {
-  font-size: clamp(3rem, 5vw, 4.8rem);
-  margin-bottom: 0.9rem;
-  line-height: 0.94;
+  font-size: clamp(3.6rem, 6vw, 5.6rem);
+  margin-bottom: 1rem;
+  line-height: 0.92;
+  max-width: 980px;
 }
 
 .home-page .hero-subtitle {
-  margin-bottom: 1rem;
-  font-size: 1rem;
+  margin-bottom: 1.05rem;
+  font-size: 1.08rem;
 }
 
 .home-page .hero-year {
-  margin-bottom: 1.1rem;
-  padding: 0.68rem 1.18rem;
-  font-size: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.78rem 1.3rem;
+  font-size: 1.05rem;
 }
 
 .home-page .transparent-block.hero-panel {
-  width: min(820px, 100%);
-  margin: 0.75rem 0 1.15rem;
-  padding: 1.15rem 1.35rem;
+  width: min(920px, 100%);
+  margin: 0.8rem 0 1.25rem;
+  padding: 1.3rem 1.5rem;
 }
 
 .home-page .transparent-block.hero-panel p {
-  font-size: 1.06rem;
+  font-size: 1.14rem;
 }
 
 .home-page .hero-actions {
-  gap: 0.9rem;
-  margin-bottom: 1.15rem;
+  gap: 1rem;
+  margin-bottom: 1.3rem;
 }
 
 .home-page .hero-button {
-  min-width: 205px;
-  padding: 0.95rem 1.18rem;
-  font-size: 1rem;
+  min-width: 225px;
+  padding: 1.05rem 1.28rem;
+  font-size: 1.05rem;
 }
 
 .home-page .hero-stats {
-  gap: 1rem;
+  gap: 1.1rem;
 }
 
 .home-page .stat-card {
-  padding: 1rem 1.1rem;
-  border-radius: 20px;
+  padding: 1.15rem 1.25rem;
+  border-radius: 22px;
 }
 
 .home-page .stat-card strong {
-  font-size: 1.4rem;
-  margin-bottom: 0.28rem;
+  font-size: 1.55rem;
+  margin-bottom: 0.32rem;
 }
 
 .home-page .stat-card span {
-  font-size: 0.92rem;
+  font-size: 0.98rem;
   line-height: 1.4;
 }
 
 .home-page .hero-visual {
-  min-height: auto;
+  min-height: 620px;
   align-items: center;
 }
 
 .home-page .portrait-stage {
-  width: min(390px, 100%);
-  aspect-ratio: 1 / 1.02;
-  border-radius: 32px;
-  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.32);
+  width: min(470px, 100%);
+  aspect-ratio: 1 / 1.04;
+  border-radius: 36px;
+  box-shadow: 0 34px 70px rgba(0, 0, 0, 0.34);
 }
 
 .home-page .portrait-stage .profile-photo {
-  width: 255px;
-  height: 255px;
+  width: 310px;
+  height: 310px;
 }
 
 .home-page footer {
-  padding: 0.85rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
 .home-page .site-footer p {
