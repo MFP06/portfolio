@@ -1158,8 +1158,8 @@ footer {
 }
 
 .home-page nav {
-  padding: 0.9rem 1.6rem;
-  gap: 1rem;
+  padding: 1rem 2rem;
+  gap: 1.5rem;
 }
 
 .home-page {
@@ -1167,17 +1167,17 @@ footer {
 }
 
 .home-page .logo {
-  font-size: 1.9rem;
+  font-size: 2rem;
 }
 
 .home-page .nav-links {
-  gap: 0.6rem;
+  gap: 0.8rem;
 }
 
 .home-page .nav-links a {
-  min-height: 2.25rem;
-  padding: 0.48rem 0.9rem;
-  font-size: 0.92rem;
+  min-height: 2.45rem;
+  padding: 0.55rem 1rem;
+  font-size: 0.98rem;
 }
 
 .home-page .home-hero {
@@ -1295,17 +1295,17 @@ footer {
   }
 
   .home-page nav {
-    padding: 0.52rem 0.95rem;
+    padding: 1rem 2rem;
   }
 
   .home-page .logo {
-    font-size: 1.55rem;
+    font-size: 2rem;
   }
 
   .home-page .nav-links a {
-    min-height: 2.05rem;
-    padding: 0.34rem 0.66rem;
-    font-size: 0.82rem;
+    min-height: 2.45rem;
+    padding: 0.55rem 1rem;
+    font-size: 0.98rem;
   }
 
   .home-page .home-hero {
