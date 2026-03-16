@@ -582,7 +582,7 @@ main {
 
 .about-passions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(5, minmax(0, 1fr));
   gap: 1rem;
   margin-top: 1.2rem;
 }
@@ -727,32 +727,60 @@ main {
   stroke: var(--white);
 }
 
+.project-skills-title {
+  margin-top: 3rem;
+  color: var(--accent);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
 .skills-list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 0.9rem;
   list-style: none;
-  margin-top: 1.2rem;
+  width: min(760px, 100%);
+  margin: 1rem auto 0;
   padding: 0;
 }
 
-.skill-block {
-  padding: 0.6rem 1rem;
-  border-radius: 999px;
-  background: linear-gradient(135deg, rgba(255, 126, 95, 0.88), rgba(254, 180, 123, 0.82));
-  color: var(--white);
-  font-weight: 700;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.18);
+.project-skills-list {
+  margin-bottom: 3rem;
 }
 
-.skill-block a,
+.skill-block {
+  display: flex;
+  min-height: 100%;
+  border-radius: 20px;
+  background:
+    linear-gradient(180deg, rgba(255, 126, 95, 0.18), rgba(254, 180, 123, 0.1)),
+    rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  font-weight: 700;
+  box-shadow: 0 12px 22px rgba(0, 0, 0, 0.18);
+  overflow: hidden;
+}
+
+.skill-block a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100%;
+  padding: 0.95rem 1.1rem;
+  color: var(--white);
+  text-align: center;
+  line-height: 1.4;
+}
+
 .white-link {
   color: var(--white);
 }
 
 .skill-block:hover {
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 28px rgba(0, 0, 0, 0.22);
 }
 
 .skills-intro {
@@ -1503,6 +1531,10 @@ footer {
   }
 
   .about-passions-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
     grid-template-columns: 1fr;
   }
 
