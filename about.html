@@ -2,108 +2,219 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>À propos de moi</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>À propos</title>
+  <link rel="stylesheet" href="style.css?v=20260316-about-refresh" />
+  <script src="site.js" defer></script>
 </head>
-<body>
+<body class="about-page">
+
   <nav>
     <div class="logo">Mon Portfolio</div>
     <div class="nav-links">
       <a href="index.html">Accueil</a>
       <a href="projets.html">Projets</a>
       <a href="compétences.html">Compétences</a>
+      <a href="projet_pro.html">Expérience professionnelle</a>
+      <a href="attestations.html">Attestations</a>
       <a href="about.html" class="active">À propos</a>
-      <a href="attestations.html" class="active">Attestations</a>
     </div>
   </nav>
 
-  <header class="page-headerr">
-    <h1>À propos de moi</h1>
-    <div class="transparent-block">
-    <p>Découvrez un peu plus qui je suis, mes passions et mes centres d'intérêt.</p>
+  <header class="page-header about-hero">
+    <div class="about-hero-grid">
+      <div class="about-hero-copy">
+        <span class="section-label">Profil</span>
+        <h1>Un profil technique, curieux et construit avec méthode.</h1>
+        <div class="transparent-block about-hero-panel">
+          <p>Je suis étudiant en Réseaux &amp; Télécommunications. Ce qui m’attire le plus, ce sont les environnements où la technique doit être comprise en profondeur, structurée proprement et rendue vraiment utile.</p>
+        </div>
+        <div class="about-signal-list">
+          <span>Réseaux &amp; systèmes</span>
+          <span>Développement web</span>
+          <span>Esprit d’équipe</span>
+          <span>Recherche d’alternance</span>
+        </div>
+      </div>
+
+      <aside class="about-hero-card">
+        <div class="portrait-stage">
+          <div class="portrait-glow"></div>
+          <img src="images/photo.png" alt="Photo de Mathéo Falcomer-Pagliano" class="profile-photo" />
+        </div>
+        <div class="about-card-copy">
+          <p class="about-kicker">Aujourd’hui</p>
+          <h2>Mathéo Falcomer-Pagliano</h2>
+          <p>Un profil qui mélange base technique, sérieux dans l’exécution et envie de progresser vite dans un cadre concret.</p>
+        </div>
+        <dl class="about-quick-list">
+          <div>
+            <dt>Formation</dt>
+            <dd>Réseaux, télécommunications et univers informatique</dd>
+          </div>
+          <div>
+            <dt>Forces</dt>
+            <dd>Rigueur, adaptabilité, sens du détail</dd>
+          </div>
+          <div>
+            <dt>Objectif</dt>
+            <dd>Devenir rapidement utile en alternance</dd>
+          </div>
+        </dl>
+      </aside>
     </div>
   </header>
 
-  <main>
-    <section class="about-container">
-      <div class="about-left">
-        <img src="images/photo.png" alt="Photo de profil" class="profile-photo" />
-      </div>
+  <main class="about-main">
+    <section class="about-story">
+      <article class="about-feature">
+        <span class="section-label">Ce qui me définit</span>
+        <h2>J’aime comprendre comment les choses fonctionnent, puis les rendre plus claires et plus fiables.</h2>
+        <p>Mon parcours m’a amené à travailler sur des sujets variés, des bases réseaux aux projets web, en passant par des expériences plus humaines et associatives. Cette diversité m’a appris à garder la même exigence partout : observer, organiser, exécuter proprement et rester utile au collectif.</p>
+        <p>Je ne me limite pas à la technique pure. J’accorde aussi beaucoup d’importance à la manière de travailler, à la qualité de communication et au fait de produire un résultat lisible, solide et cohérent. Ce portfolio montre ce que je sais faire, mais cette page montre surtout comment j’aborde les choses.</p>
+      </article>
 
-      
-      <div class="transparent-block">
-        <h2>Qui suis-je ?</h2>
-        <p>
-          Mes passions occupent une place importante dans ma vie. Le sport en club comme le tennis ou le ski m’ont appris la discipline, le dépassement de soi et le travail en équipe. La musique, pratiquée depuis l’enfance, renforce ma concentration et ma créativité. J’aime aussi voyager, découvrir le monde automobile et capturer des instants à travers la photographie. D’ailleurs, ce portfolio est illustré avec certaines de mes propres photos. Ces activités développent chez moi curiosité, sens du détail et équilibre personnel, des qualités que je retrouve et applique dans mon parcours professionnel.
-        </p>
+      <div class="about-metric-grid">
+        <article class="about-metric-card">
+          <strong>Technique</strong>
+          <p>Une base construite sur les réseaux, l’architecture logique et les projets web.</p>
+        </article>
+        <article class="about-metric-card">
+          <strong>Méthode</strong>
+          <p>Le besoin de structurer, hiérarchiser et garder une exécution propre du début à la fin.</p>
+        </article>
+        <article class="about-metric-card">
+          <strong>Humain</strong>
+          <p>Le goût de la transmission, de l’écoute et d’un travail utile dans un cadre collectif.</p>
+        </article>
       </div>
-      <div class="transparent-block">
-        <h2>Mes passions</h2>
-        <div class="passions-grid">
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/voiture.jpg');"></div>
-            <p>Voitures</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/tennis.jpeg');"></div>
-            <p>Sport</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/soleil.jpg');"></div>
-            <p>Photographie</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/musique.jpeg');"></div>
-            <p>Musique</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/nourriture.jpg');"></div>
-            <p>Cuisine du monde</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/benevola.jpg');"></div>
-            <p>Transmission de valeurs</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/voyages.jpg');"></div>
-            <p>Voyages</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/informatique.jpg');"></div>
-            <p>Informatique</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/art.jpg');"></div>
-            <p>L'art</p>
-          </div>
-          <div class="passion-item">
-            <div class="passion-circle" style="background-image: url('images/aeronotique.JPG');"></div>
-            <p>L'aéronautique</p>
-          </div>
+    </section>
 
+    <section class="about-columns">
+      <article class="about-panel-card">
+        <span class="section-label">Ma manière de travailler</span>
+        <h2>Une approche simple : comprendre, structurer, livrer quelque chose d’utile.</h2>
+        <div class="about-steps">
+          <div class="about-step">
+            <span class="about-step-number">01</span>
+            <div>
+              <h3>Analyser avant d’agir</h3>
+              <p>Je préfère repartir du besoin réel, comprendre le contexte et éviter les réponses superficielles.</p>
+            </div>
+          </div>
+          <div class="about-step">
+            <span class="about-step-number">02</span>
+            <div>
+              <h3>Mettre de l’ordre</h3>
+              <p>Quand un sujet devient plus clair, il devient aussi plus simple à exécuter et à expliquer.</p>
+            </div>
+          </div>
+          <div class="about-step">
+            <span class="about-step-number">03</span>
+            <div>
+              <h3>Soigner le résultat</h3>
+              <p>Je cherche un rendu propre, fiable et cohérent, pas seulement une solution qui fonctionne à moitié.</p>
+            </div>
+          </div>
         </div>
+      </article>
+
+      <article class="about-panel-card">
+        <span class="section-label">Repères personnels</span>
+        <h2>Ce que mes expériences m’ont appris en dehors des cours.</h2>
+        <ul class="about-bullet-list">
+          <li>Les projets techniques m’ont donné le goût des environnements structurés et de la logique réseau.</li>
+          <li>Le développement web m’a appris à organiser l’information et à penser le rendu côté utilisateur.</li>
+          <li>Les expériences professionnelles m’ont renforcé sur l’adaptation, le sérieux et le sens du travail bien fait.</li>
+          <li>Les engagements bénévoles ont développé chez moi la transmission, l’écoute et la responsabilité.</li>
+        </ul>
+        <a href="attestations.html" class="hero-button hero-button-secondary about-inline-link">Voir les attestations</a>
+      </article>
+    </section>
+
+    <section class="about-passions-section">
+      <div class="about-section-head">
+        <span class="section-label">En dehors du cadre académique</span>
+        <h2>Des centres d’intérêt qui renforcent aussi ma façon de travailler.</h2>
+        <p>Sport, musique, photographie, voyages ou engagement : ce ne sont pas des sujets à part, mais des repères qui nourrissent ma discipline, ma curiosité et mon équilibre.</p>
       </div>
-      <div class="transparent-block">
-        <h2>Informations complémentaires</h2>
-        <p>
-          Toujours à la recherche de nouvelles opportunités pour développer mes compétences, je suis prêt à travailler sur des projets innovants.
-          N'hésitez pas à me contacter pour toute collaboration ou simplement échanger.
-        </p>
+
+      <div class="about-interest-grid">
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/tennis.jpeg');"></div>
+          <div class="about-interest-copy">
+            <h3>Sport</h3>
+            <p>Le tennis et le ski m’ont appris la régularité, le dépassement de soi et la gestion de l’effort.</p>
+          </div>
+        </article>
+
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/musique.jpeg');"></div>
+          <div class="about-interest-copy">
+            <h3>Musique</h3>
+            <p>Elle renforce ma concentration et me pousse à être précis, patient et constant dans la progression.</p>
+          </div>
+        </article>
+
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/soleil.jpg');"></div>
+          <div class="about-interest-copy">
+            <h3>Photographie</h3>
+            <p>J’aime capter les détails et composer une image. Certaines photos du portfolio viennent d’ailleurs de cette pratique.</p>
+          </div>
+        </article>
+
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/voyages.jpg');"></div>
+          <div class="about-interest-copy">
+            <h3>Voyages</h3>
+            <p>Découvrir de nouveaux environnements m’aide à rester curieux, ouvert et attentif à d’autres façons de faire.</p>
+          </div>
+        </article>
+
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/voiture.jpg');"></div>
+          <div class="about-interest-copy">
+            <h3>Automobile</h3>
+            <p>J’y retrouve le goût de la mécanique, de la précision et des systèmes pensés dans les moindres détails.</p>
+          </div>
+        </article>
+
+        <article class="about-interest-card">
+          <div class="about-interest-media" style="--interest-image: url('images/benevola.jpg');"></div>
+          <div class="about-interest-copy">
+            <h3>Engagement</h3>
+            <p>Le bénévolat m’a confirmé l’importance de transmettre, d’encadrer et de rester utile à d’autres que soi.</p>
+          </div>
+        </article>
       </div>
+    </section>
+
+    <section class="about-projection">
+      <article class="about-projection-card">
+        <span class="section-label">Projection</span>
+        <h2>Ce que je cherche maintenant</h2>
+        <p>Je souhaite continuer à progresser dans un cadre d’alternance exigeant, avec des missions concrètes, une montée en autonomie réelle et la possibilité de transformer mes bases techniques en résultats utiles sur le terrain.</p>
+        <div class="about-projection-points">
+          <span>Approfondir les réseaux</span>
+          <span>Apprendre vite</span>
+          <span>Gagner en autonomie</span>
+          <span>Contribuer à des projets concrets</span>
+        </div>
+        <div class="hero-actions">
+          <a href="projet_pro.html" class="hero-button hero-button-primary">Voir mon expérience</a>
+          <a href="projets.html" class="hero-button hero-button-secondary">Parcourir mes projets</a>
+        </div>
+      </article>
     </section>
   </main>
 
   <footer>
-    <section class="contact-footer">
-      <h3>Contactez-moi</h3>
-      <form action="send_mail.php" method="post" class="contact-form">
-        <input type="text" name="name" placeholder="Votre nom" required />
-        <input type="email" name="email" placeholder="Votre email" required />
-        <textarea name="message" rows="4" placeholder="Votre message" required></textarea>
-        <button type="submit">Envoyer</button>
-      </form>
+    <section class="site-footer">
+      <p>&copy; <span data-current-year>2026</span> Mon Portfolio. Tous droits réservés.</p>
+      <p>Une page de présentation personnelle pensée comme un complément au reste du portfolio.</p>
     </section>
   </footer>
+
 </body>
 </html>

@@ -485,94 +485,6 @@ main {
   font-size: clamp(2rem, 3vw, 2.6rem);
 }
 
-.about-container {
-  display: grid;
-  grid-template-columns: 280px minmax(0, 1fr);
-  gap: 2rem;
-  align-items: start;
-  margin-top: 1rem;
-}
-
-.about-left {
-  display: flex;
-  justify-content: center;
-}
-
-.about-layout {
-  display: grid;
-  grid-template-columns: 320px minmax(0, 1fr);
-  gap: 1.6rem;
-  align-items: start;
-  margin-top: 1rem;
-}
-
-.about-side-card,
-.about-panel {
-  position: relative;
-  padding: 1.7rem;
-  border-radius: 28px;
-  background:
-    linear-gradient(180deg, rgba(255, 126, 95, 0.1), transparent 24%),
-    linear-gradient(165deg, rgba(28, 28, 28, 0.92), rgba(10, 10, 10, 0.95));
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  box-shadow: var(--shadow);
-  overflow: hidden;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
-}
-
-.about-side-card {
-  text-align: center;
-  position: sticky;
-  top: 7rem;
-}
-
-.about-side-card:hover,
-.about-panel:hover {
-  transform: translateY(-4px);
-  border-color: rgba(254, 180, 123, 0.22);
-}
-
-.about-side-card .profile-photo {
-  width: 210px;
-  height: 210px;
-  margin-bottom: 1.2rem;
-}
-
-.about-side-card h2,
-.about-panel h2 {
-  margin: 0.9rem 0 0.8rem;
-  color: var(--title-strong);
-  font-size: 2rem;
-}
-
-.about-story-grid,
-.about-note-grid {
-  display: grid;
-  gap: 1.4rem;
-}
-
-.about-panel-wide {
-  margin-top: 1.6rem;
-}
-
-.about-badges {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.65rem;
-  margin-top: 1rem;
-}
-
-.about-badges span {
-  padding: 0.45rem 0.8rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: var(--accent-light);
-  font-size: 0.86rem;
-  font-weight: 800;
-}
-
 .glass-section,
 .attestation-item,
 .project-detail-panel,
@@ -586,41 +498,370 @@ main {
   transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
 }
 
-.about-container .transparent-block {
-  width: 100%;
+.about-page .page-header {
+  padding: 2.8rem 1.25rem 1.5rem;
+  text-align: left;
 }
 
-.passions-grid {
+.about-page .page-header::before {
+  top: 4%;
+  left: auto;
+  right: 6%;
+}
+
+.about-page .page-header h1 {
+  max-width: 10ch;
+  margin-bottom: 0.45rem;
+  font-size: clamp(3.2rem, 6vw, 5.1rem);
+  line-height: 0.92;
+  color: #f4c39d;
+}
+
+.about-hero-grid {
+  position: relative;
+  z-index: 1;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  grid-template-columns: minmax(0, 1.15fr) 360px;
+  gap: 1.8rem;
+  width: min(1180px, 100%);
+  margin: 0 auto;
+  align-items: stretch;
+}
+
+.about-hero-copy {
+  display: grid;
+  align-content: center;
+  gap: 0.85rem;
+  max-width: 760px;
+}
+
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  width: fit-content;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  background: rgba(23, 23, 23, 0.78);
+  border: 1px solid rgba(254, 180, 123, 0.34);
+  color: var(--accent-light);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-hero-panel {
+  width: min(760px, 100%);
+  margin: 0;
+}
+
+.about-hero-panel p {
+  font-size: 1.02rem;
+}
+
+.about-signal-list,
+.about-projection-points {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.about-signal-list span,
+.about-projection-points span {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.about-hero-card,
+.about-feature,
+.about-metric-card,
+.about-panel-card,
+.about-interest-card,
+.about-projection-card {
+  position: relative;
+  border-radius: 30px;
+  background:
+    linear-gradient(180deg, rgba(255, 126, 95, 0.12), transparent 24%),
+    linear-gradient(165deg, rgba(26, 26, 26, 0.9), rgba(8, 8, 8, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.about-hero-card {
+  display: grid;
   gap: 1.2rem;
+  padding: 1.45rem;
+}
+
+.about-page .portrait-stage {
+  width: 100%;
+  aspect-ratio: 1 / 0.98;
+  min-height: 0;
+  border-radius: 28px;
+}
+
+.about-page .portrait-stage::before {
+  inset: 0.95rem;
+}
+
+.about-page .portrait-stage .profile-photo {
+  width: 220px;
+  height: 220px;
+}
+
+.about-card-copy h2 {
+  margin: 0.2rem 0 0.55rem;
+  font-size: 2.2rem;
+  color: #f0bb95;
+}
+
+.about-card-copy p:last-child {
+  margin-bottom: 0;
+}
+
+.about-kicker {
+  margin-bottom: 0;
+  color: var(--accent-light);
+  font-size: 0.84rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-quick-list {
+  display: grid;
+  gap: 0.85rem;
+}
+
+.about-quick-list div {
+  padding-top: 0.85rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.about-quick-list dt {
+  margin-bottom: 0.22rem;
+  color: var(--accent-light);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.about-quick-list dd {
+  margin: 0;
+  color: var(--text);
+}
+
+.about-main {
+  width: min(1180px, 100%);
+}
+
+.about-story {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) 320px;
+  gap: 1.5rem;
+  margin-top: 1.1rem;
+}
+
+.about-feature,
+.about-panel-card,
+.about-projection-card {
+  padding: 1.85rem;
+}
+
+.about-feature h2,
+.about-panel-card h2,
+.about-section-head h2,
+.about-projection-card h2 {
+  margin: 0.75rem 0 0.9rem;
+  font-size: clamp(2.15rem, 4vw, 3rem);
+  line-height: 0.95;
+  color: #f0bb95;
+}
+
+.about-feature p:last-child,
+.about-projection-card p:last-of-type {
+  margin-bottom: 0;
+}
+
+.about-metric-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.about-metric-card {
+  padding: 1.3rem;
+}
+
+.about-metric-card strong {
+  display: block;
+  margin-bottom: 0.35rem;
+  color: var(--accent-light);
+  font-size: 1.25rem;
+}
+
+.about-metric-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.about-columns {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.6rem;
+}
+
+.about-steps {
+  display: grid;
+  gap: 0.9rem;
   margin-top: 1rem;
 }
 
-.passion-item {
-  text-align: center;
+.about-step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem;
+  align-items: start;
+  padding-top: 0.95rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.passion-circle {
-  width: 118px;
-  height: 118px;
-  margin: 0 auto 0.8rem;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  border: 3px solid rgba(254, 180, 123, 0.85);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.28);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.about-step:first-child {
+  padding-top: 0;
+  border-top: none;
 }
 
-.passion-circle:hover {
-  transform: translateY(-5px) scale(1.04);
-  box-shadow: 0 12px 24px rgba(255, 126, 95, 0.34);
+.about-step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border-radius: 18px;
+  background: linear-gradient(135deg, rgba(255, 126, 95, 0.24), rgba(254, 180, 123, 0.18));
+  border: 1px solid rgba(254, 180, 123, 0.32);
+  color: var(--accent-light);
+  font-weight: 800;
 }
 
-.passion-item p {
+.about-step h3 {
+  margin-bottom: 0.25rem;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 1.08rem;
+}
+
+.about-step p {
   margin-bottom: 0;
-  font-weight: 700;
+  color: var(--muted);
+}
+
+.about-bullet-list {
+  display: grid;
+  gap: 0.95rem;
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-bullet-list li {
+  position: relative;
+  padding-left: 1.3rem;
+}
+
+.about-bullet-list li::before {
+  content: '';
+  position: absolute;
+  top: 0.65rem;
+  left: 0;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 0 4px rgba(255, 126, 95, 0.14);
+}
+
+.about-inline-link {
+  margin-top: 1.2rem;
+  width: fit-content;
+}
+
+.about-passions-section {
+  margin-top: 1.6rem;
+}
+
+.about-section-head {
+  display: grid;
+  gap: 0.55rem;
+  max-width: 760px;
+  margin-bottom: 1.2rem;
+}
+
+.about-section-head h2 {
+  margin-top: 0;
+}
+
+.about-interest-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.2rem;
+}
+
+.about-interest-card {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+.about-interest-media {
+  height: 170px;
+  background:
+    linear-gradient(180deg, rgba(255, 126, 95, 0.16), rgba(0, 0, 0, 0.36)),
+    var(--interest-image) center/cover no-repeat;
+}
+
+.about-interest-copy {
+  display: grid;
+  gap: 0.5rem;
+  flex: 1;
+  padding: 1.35rem;
+}
+
+.about-interest-copy h3 {
+  color: var(--accent-light);
+  font-size: 1.7rem;
+}
+
+.about-interest-copy p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
+.about-projection {
+  margin-top: 1.6rem;
+}
+
+.about-projection-card {
+  display: grid;
+  gap: 1rem;
+  background:
+    linear-gradient(135deg, rgba(255, 126, 95, 0.18), rgba(254, 180, 123, 0.08)),
+    linear-gradient(165deg, rgba(24, 24, 24, 0.92), rgba(8, 8, 8, 0.96));
+}
+
+.about-projection-card .hero-actions {
+  margin-bottom: 0;
 }
 
 .project-grid {
@@ -1381,6 +1622,17 @@ footer {
   }
 }
 
+@media (max-width: 1100px) {
+  .about-hero-grid,
+  .about-story {
+    grid-template-columns: 1fr;
+  }
+
+  .about-interest-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 900px) {
   nav {
     flex-direction: column;
@@ -1391,16 +1643,22 @@ footer {
     justify-content: flex-start;
   }
 
-  .about-container {
+  .about-page .page-header {
+    padding-top: 2.4rem;
+  }
+
+  .about-page .page-header h1 {
+    max-width: none;
+  }
+
+  .about-columns,
+  .about-interest-grid {
     grid-template-columns: 1fr;
   }
 
-  .about-layout {
-    grid-template-columns: 1fr;
-  }
-
-  .about-side-card {
-    position: static;
+  .about-page .portrait-stage .profile-photo {
+    width: 200px;
+    height: 200px;
   }
 
   .hero-grid,
@@ -1478,6 +1736,31 @@ footer {
   .portrait-stage .profile-photo {
     width: 220px;
     height: 220px;
+  }
+
+  .about-page .page-header {
+    padding-inline: 1rem;
+  }
+
+  .about-hero-card,
+  .about-feature,
+  .about-panel-card,
+  .about-projection-card {
+    padding: 1.25rem;
+  }
+
+  .about-step {
+    grid-template-columns: 1fr;
+    gap: 0.7rem;
+  }
+
+  .about-signal-list span,
+  .about-projection-points span {
+    width: 100%;
+  }
+
+  .about-interest-media {
+    height: 150px;
   }
 
   .floating-note {
