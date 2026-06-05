@@ -627,40 +627,63 @@ main {
   align-items: stretch;
 }
 
-.project-filters {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 0.75rem;
-  margin: 1.5rem auto 0;
+.project-filter-panel {
+  width: min(760px, 100%);
+  margin: 1.6rem auto 0;
+  padding: 0.75rem;
+  border-radius: 22px;
+  background:
+    linear-gradient(180deg, rgba(255, 126, 95, 0.12), transparent 34%),
+    linear-gradient(165deg, rgba(28, 28, 28, 0.86), rgba(10, 10, 10, 0.9));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+}
+
+.project-filter-label {
+  margin-bottom: 0.55rem;
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project-filter-group {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.55rem;
 }
 
 .project-filter {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 2.5rem;
-  padding: 0.6rem 1.1rem;
-  border: 1px solid rgba(254, 180, 123, 0.34);
-  border-radius: 999px;
+  min-height: 2.65rem;
+  padding: 0.62rem 0.9rem;
+  border: 1px solid transparent;
+  border-radius: 16px;
   background: rgba(255, 255, 255, 0.06);
   color: var(--white);
   font: inherit;
+  font-size: 0.95rem;
   font-weight: 800;
   cursor: pointer;
-  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease;
+  transition: transform 0.25s ease, border-color 0.25s ease, background 0.25s ease, color 0.25s ease;
 }
 
 .project-filter:hover,
 .project-filter.active {
   transform: translateY(-2px);
-  background: linear-gradient(135deg, rgba(255, 126, 95, 0.28), rgba(254, 180, 123, 0.16));
-  border-color: rgba(254, 180, 123, 0.65);
-  color: var(--accent-light);
+  background: linear-gradient(135deg, var(--accent), var(--accent-light));
+  border-color: rgba(254, 180, 123, 0.72);
+  color: var(--white);
+  box-shadow: 0 12px 24px rgba(255, 126, 95, 0.18);
 }
 
-.project-card.is-hidden {
-  display: none;
+.project-card.is-hidden,
+.project-card[hidden] {
+  display: none !important;
 }
 
 .project-card {
