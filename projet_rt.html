@@ -31,47 +31,89 @@
   <header class="page-header">
     <h1>Projets R&T</h1>
     <div class="transparent-block">
-    <p>Sous-projets réalisés durant la formation réseau, web, systèmes, etc.</p>
+    <p>Retrouvez ici mes projets de première et de seconde année en BUT Réseaux & Télécommunications, classés par progression dans la formation.</p>
     </div>
   </header>
 
   <main>
+    <section class="project-filters" aria-label="Filtrer les projets par année">
+      <button class="project-filter active" type="button" data-project-filter="all">Tous</button>
+      <button class="project-filter" type="button" data-project-filter="annee1">Première année</button>
+      <button class="project-filter" type="button" data-project-filter="annee2">Seconde année</button>
+    </section>
+
     <section class="project-grid">
 
-      <a href="projet1.html" class="project-card">
+      <a href="projet1.html" class="project-card" data-project-year="annee1">
         <img src="images/reseau.jpg" alt="Projet 1" />
         <h2>Configuration réseau sécurisé (SAE21)</h2>
-        <p>Configuration VLAN, routage, sécurité réseau.</p>
+        <p>Première approche d'un réseau segmenté avec VLAN, routage et règles de sécurité pour contrôler les échanges.</p>
       </a>
 
-      <a href="projet2.html" class="project-card">
+      <a href="projet2.html" class="project-card" data-project-year="annee1">
         <img src="images/thales.jpg" alt="Projet 2" />
         <h2>Développement outils web pour prise de photos (SAE 15 & 23)</h2>
-        <p>Création d’un site dynamique avec PHP et MySQL.</p>
+        <p>Création d'une application web dynamique avec PHP et MySQL pour répondre à un besoin client précis.</p>
       </a>
 
-      <a href="projet3.html" class="project-card">
+      <a href="projet3.html" class="project-card" data-project-year="annee1">
         <img src="images/web.jpg" alt="Projet 3" />
         <h2>Initiation WEB (R109)</h2>
-        <p>Creation d'un site Web pour commencer a manier les outils html et css.</p>
+        <p>Création d'un premier site web afin de maîtriser les bases du HTML, du CSS et de la structuration d'une page.</p>
       </a>
 
-      <a href="projet4.html" class="project-card">
+      <a href="projet4.html" class="project-card" data-project-year="annee1">
         <img src="images/jupyter.png" alt="Projet 4" />
-        <h2>Mesurer et caracteriser un signal (SAE 22)</h2>
-        <p>Creer, modifier des signaux et les afficher sur jupyter notebook.</p>
+        <h2>Mesurer et caractériser un signal (SAE 22)</h2>
+        <p>Création, modification et affichage de signaux avec Jupyter Notebook pour comprendre leur comportement.</p>
       </a>
 
-      <a href="projet5.html" class="project-card">
+      <a href="projet5.html" class="project-card" data-project-year="annee1">
         <img src="images/portfolio.jpeg" alt="Projet 5" />
-        <h2>Creation d'un portfolio (SAE 25)</h2>
-        <p>Mise en place d’un site web pour nous presenter sous un angle informatique</p>
+        <h2>Création d'un portfolio (SAE 25)</h2>
+        <p>Mise en place d'un site web personnel pour présenter mon parcours, mes compétences et mes projets techniques.</p>
       </a>
 
-      <a href="projet6.html" class="project-card">
+      <a href="projet6.html" class="project-card" data-project-year="annee1">
         <img src="images/reseau3.jpg" alt="Projet 6" />
-        <h2>Initiation aux reseaux informatique (SAE 12)</h2>
-        <p>Decouverte et mise en oeuvre d'un premier reseau informatique en dehors des TP.</p>
+        <h2>Initiation aux réseaux informatiques (SAE 12)</h2>
+        <p>Découverte et mise en œuvre d'un premier réseau informatique avec adressage, services et tests de connectivité.</p>
+      </a>
+
+      <a href="projet11.html" class="project-card" data-project-year="annee2">
+        <img src="images/cybersecureseau.jpg" alt="Projet cybersécurité" />
+        <h2>Création d'un TP de cybersécurité (R409)</h2>
+        <p>Conception complète d'un TP pédagogique en cybersécurité, à partir des notions étudiées dans le cahier de cours.</p>
+      </a>
+
+      <a href="projet12.html" class="project-card" data-project-year="annee2">
+        <img src="images/scanip.webp" alt="Scanner réseau web" />
+        <h2>Application Android de scan réseau (SAE 32)</h2>
+        <p>Développement d'un outil mobile capable de scanner un réseau, d'afficher les équipements détectés et de rendre les résultats lisibles.</p>
+      </a>
+
+      <a href="projet13.html" class="project-card" data-project-year="annee2">
+        <img src="images/antenne1.jfif" alt="Mesure d'antenne" />
+        <h2>Étude et mesure d'antennes (R403)</h2>
+        <p>Étude expérimentale d'antennes avec dispositif de mesure, observation du signal et compte rendu technique.</p>
+      </a>
+
+      <a href="projet14.html" class="project-card" data-project-year="annee2">
+        <img src="images/osint.jfif" alt="Projet OSINT" />
+        <h2>Recherche OSINT encadrée</h2>
+        <p>Investigation à partir de sources ouvertes, réalisée dans un cadre autorisé et strictement limité par un périmètre défini.</p>
+      </a>
+
+      <a href="projet15.html" class="project-card" data-project-year="annee2">
+        <img src="images/powershell.jfif" alt="Projet PowerShell" />
+        <h2>Script d'automatisation PowerShell (R405)</h2>
+        <p>Projet en cours : création d'un script PowerShell pour automatiser une tâche utile dans un contexte d'entreprise.</p>
+      </a>
+
+      <a href="projet16.html" class="project-card" data-project-year="annee2">
+        <img src="images/reseau3.jpg" alt="Projet VPN inter-sites" />
+        <h2>Réseau multi-sites sécurisé Alt-B-SUD</h2>
+        <p>Conception d'une infrastructure complète : interconnexion de sites, VPN IPsec, DMZ, serveurs et sécurité réseau.</p>
       </a>
 
     </section>
