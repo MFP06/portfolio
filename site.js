@@ -38,4 +38,39 @@ document.addEventListener('DOMContentLoaded', function () {
 
     applyProjectFilter('all');
   }
+
+  function setupTypedFilter(buttonAttribute, itemAttribute) {
+    var buttons = document.querySelectorAll('[' + buttonAttribute + ']');
+    var items = document.querySelectorAll('[' + itemAttribute + ']');
+
+    if (!buttons.length || !items.length) {
+      return;
+    }
+
+    function applyFilter(filter) {
+      buttons.forEach(function (button) {
+        var isActive = button.getAttribute(buttonAttribute) === filter;
+        button.classList.toggle('active', isActive);
+        button.setAttribute('aria-pressed', isActive ? 'true' : 'false');
+      });
+
+      items.forEach(function (item) {
+        var type = item.getAttribute(itemAttribute);
+        var isHidden = filter !== 'all' && type !== filter;
+        item.classList.toggle('is-hidden', isHidden);
+        item.hidden = isHidden;
+      });
+    }
+
+    buttons.forEach(function (button) {
+      button.addEventListener('click', function () {
+        applyFilter(button.getAttribute(buttonAttribute));
+      });
+    });
+
+    applyFilter('all');
+  }
+
+  setupTypedFilter('data-skill-filter', 'data-skill-type');
+  setupTypedFilter('data-attestation-filter', 'data-attestation-type');
 });

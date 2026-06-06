@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Attestations & Résultats</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=20260606-filtres" />
+  <script src="site.js?v=20260606-filtres" defer></script>
 </head>
 <body>
   <nav>
@@ -28,39 +28,48 @@
   </header>
 
   <main>
+    <section class="project-filter-panel" aria-label="Filtrer les attestations par type">
+      <div class="project-filter-label">Filtrer les attestations</div>
+      <div class="project-filter-group">
+        <button class="project-filter active" type="button" data-attestation-filter="all" aria-pressed="true">Toutes</button>
+        <button class="project-filter" type="button" data-attestation-filter="scolaire" aria-pressed="false">Scolaires</button>
+        <button class="project-filter" type="button" data-attestation-filter="engagement" aria-pressed="false">Engagement</button>
+      </div>
+    </section>
+
     <section class="attestations-section">
       
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="scolaire">
         <h2>Baccalauréat</h2>
         <p>Diplôme obtenu en 2024, spécialités Mathématiques et Physique-Chimie.</p>
         <a href="documents/Bac - relevé de notes-2.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>
       </article>
 
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="engagement">
         <h2>Phase I du SNU</h2>
         <p>Attestation de participation à la première phase du Service National Universel, réalisée en juin 2022.</p>
         <a href="documents/certif_phase1_snu.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>
       </article>
 
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="engagement">
         <h2>Journée Défense et Citoyenneté</h2>
         <p>Certification officielle de participation, obtenue en juin 2022.</p>
         <a href="documents/Certificat individuel de participation à la journée défense et citoyenneté-2.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>
       </article>
 
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="engagement">
         <h2>Cadet de l’UNC</h2>
         <p>Certificat de participation en tant que porte-drapeau et porte-coussin pour l’Union Nationale des Combattants.</p>
         <a href="documents/Cadet de l'UNC.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>
       </article>
 
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="engagement">
         <h2>Phase II du SNU</h2>
         <p>Attestation de réalisation de la seconde phase du Service National Universel, en février 2023.</p>
         <a href="documents/Mathéo FALCOMER-PAGLIANO - attestation phase 2.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>
       </article>
 
-      <article class="attestation-item">
+      <article class="attestation-item" data-attestation-type="engagement">
         <h2>Formateur de cadets – UNC</h2>
         <p>Certificat délivré en reconnaissance de mon rôle de formateur pour les cadets (porte-drapeaux et porte-coussins).</p>
         <a href="documents/Attestation formateur UNC.pdf" target="_blank" rel="noopener noreferrer" class="btn">Voir le document</a>

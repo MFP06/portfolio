@@ -4,8 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Mes Compétences</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="site.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=20260606-filtres" />
+  <script src="site.js?v=20260606-filtres" defer></script>
 </head>
 <body>
 
@@ -24,17 +24,26 @@
   <header class="page-header">
     <h1>Mes compétences</h1>
     <div class="transparent-block">
-      <p>Toutes mes compétences sont regroupées par catégorie avec un niveau estimé et un lien vers l’expérience qui les a réellement développées.</p>
+      <p>Cette page me permet de montrer non seulement ce que je sais faire, mais aussi dans quel contexte j’ai appris à le faire. Cela donne une lecture plus concrète de mon profil.</p>
     </div>
   </header>
 
   <main>
-    <section class="skills-intro">
-      <p>Cette page me permet de montrer non seulement ce que je sais faire, mais aussi dans quel contexte j’ai appris à le faire. Cela donne une lecture plus concrète de mon profil.</p>
+    <section class="skills-intro glass-section">
+      <p>Toutes mes compétences sont regroupées par catégorie avec un niveau estimé et un lien vers l’expérience qui les a réellement développées.</p>
+    </section>
+
+    <section class="project-filter-panel" aria-label="Filtrer les compétences par type">
+      <div class="project-filter-label">Filtrer les compétences</div>
+      <div class="project-filter-group">
+        <button class="project-filter active" type="button" data-skill-filter="all" aria-pressed="true">Toutes</button>
+        <button class="project-filter" type="button" data-skill-filter="technique" aria-pressed="false">Techniques</button>
+        <button class="project-filter" type="button" data-skill-filter="humaine" aria-pressed="false">Humaines</button>
+      </div>
     </section>
 
     <section class="skills-layout">
-      <article class="skills-category" id="reseaux">
+      <article class="skills-category" id="reseaux" data-skill-type="technique">
         <h2>Réseaux &amp; systèmes</h2>
         <p>Compétences construites principalement pendant la formation R&amp;T et les projets techniques orientés infrastructure.</p>
         <div class="skills-category-grid">
@@ -126,7 +135,7 @@
             <h3>Scan réseau</h3>
             <span class="skill-level">Niveau intermédiaire</span>
             <p>Identifier des équipements présents sur un réseau et présenter les résultats de façon exploitable.</p>
-            <a href="projet12.html" class="skill-link">Voir l’outil web SAE 32</a>
+            <a href="projet12.html" class="skill-link">Voir l’application Android SAE 32</a>
           </article>
           <article class="skill-card" id="cybersecurite">
             <h3>Cybersécurité</h3>
@@ -179,7 +188,7 @@
         </div>
       </article>
 
-      <article class="skills-category" id="developpement">
+      <article class="skills-category" id="developpement" data-skill-type="technique">
         <h2>Développement web &amp; scripting</h2>
         <p>Compétences développées sur des projets concrets, du site statique au web dynamique, jusqu’au scripting Python.</p>
         <div class="skills-category-grid">
@@ -246,7 +255,7 @@
         </div>
       </article>
 
-      <article class="skills-category" id="organisation">
+      <article class="skills-category" id="organisation" data-skill-type="humaine">
         <h2>Méthode, collaboration &amp; qualités humaines</h2>
         <p>Compétences développées en projet, dans mes engagements bénévoles et dans des contextes collaboratifs concrets.</p>
         <div class="skills-category-grid">
