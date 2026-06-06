@@ -1060,6 +1060,51 @@ main {
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
+.experience-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+.alternance-main {
+  width: min(1040px, 100%);
+  display: grid;
+  gap: 1.4rem;
+}
+
+.alternance-hero {
+  margin-top: 1rem;
+}
+
+.alternance-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.2rem;
+}
+
+.alternance-gallery img {
+  width: 100%;
+  min-height: 220px;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 18px;
+  border: 1px solid rgba(254, 180, 123, 0.32);
+  background: rgba(255, 255, 255, 0.06);
+  box-shadow: 0 16px 30px rgba(0, 0, 0, 0.24);
+}
+
+.alternance-gallery-single {
+  grid-template-columns: 1fr;
+}
+
+.alternance-gallery-single img {
+  max-height: none;
+  object-fit: contain;
+}
+
 .attestations-section {
   display: grid;
   gap: 1.2rem;
@@ -1530,6 +1575,10 @@ footer {
   }
 
   .experience-card-top {
+    grid-template-columns: 1fr;
+  }
+
+  .alternance-gallery {
     grid-template-columns: 1fr;
   }
 
