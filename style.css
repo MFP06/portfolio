@@ -1692,6 +1692,18 @@ footer {
     grid-template-columns: 1fr;
   }
 
+  .project-filter-panel {
+    padding: 0.9rem;
+  }
+
+  .project-filter-group {
+    grid-template-columns: 1fr;
+  }
+
+  .project-filter {
+    width: 100%;
+  }
+
   .floating-note {
     position: static;
     width: 100%;
