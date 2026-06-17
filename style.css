@@ -651,6 +651,16 @@ main {
   color: #f3ede8;
 }
 
+.about-timeline-linked {
+  display: grid;
+  gap: 0.8rem;
+}
+
+.about-timeline-linked > div {
+  padding-left: 0.9rem;
+  border-left: 2px solid rgba(254, 180, 123, 0.42);
+}
+
 .about-passions-grid {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
