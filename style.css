@@ -120,6 +120,12 @@ nav {
   color: var(--accent-light);
 }
 
+.logo:hover,
+.logo:focus-visible {
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
 .nav-links {
   display: flex;
   flex-wrap: wrap;
@@ -452,6 +458,86 @@ main {
   margin-top: 0;
 }
 
+.home-sections {
+  display: grid;
+  gap: 1.6rem;
+  padding-top: 1.4rem;
+}
+
+.home-section,
+.project-overview article {
+  position: relative;
+  padding: 1.7rem;
+  border-radius: var(--radius);
+  background:
+    linear-gradient(180deg, rgba(255, 126, 95, 0.1), transparent 26%),
+    linear-gradient(165deg, rgba(24, 24, 24, 0.9), rgba(10, 10, 10, 0.94));
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+
+.section-heading {
+  margin-bottom: 1.1rem;
+}
+
+.section-kicker,
+.focus-number,
+.project-overview span {
+  display: inline-flex;
+  margin-bottom: 0.45rem;
+  color: var(--accent-light);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.section-heading h2,
+.home-focus-card h3,
+.timeline-item h3,
+.project-overview h2 {
+  color: var(--title-strong);
+}
+
+.home-focus-grid,
+.project-overview {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-focus-card,
+.timeline-item {
+  padding: 1.1rem;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.home-focus-card p,
+.timeline-item p,
+.project-overview p {
+  color: #f3ede8;
+}
+
+.timeline {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.timeline-item {
+  display: grid;
+  grid-template-columns: 180px minmax(0, 1fr);
+  gap: 0.8rem 1.2rem;
+  align-items: start;
+}
+
+.timeline-item span {
+  color: var(--accent-light);
+  font-weight: 800;
+}
+
 .transparent-block,
 .transparent-block-2 {
   background:
@@ -562,6 +648,13 @@ main {
 .about-text-card,
 .about-section-card {
   padding: 1.75rem;
+}
+
+.about-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0.2rem 0 1rem;
 }
 
 .about-text-card h2,
@@ -767,6 +860,36 @@ main {
   border-radius: var(--radius);
   border: 2px solid rgba(254, 180, 123, 0.48);
   background: rgba(255, 255, 255, 0.08);
+}
+
+.resource-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.resource-links p {
+  margin-bottom: 0;
+}
+
+.resource-links a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.7rem;
+  padding: 0.75rem 1rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.07);
+  border: 1px solid rgba(254, 180, 123, 0.36);
+  color: var(--accent-light) !important;
+  font-weight: 800;
+}
+
+.resource-links a:hover {
+  transform: translateY(-2px);
+  background: rgba(255, 126, 95, 0.16);
+  color: var(--white) !important;
 }
 
 .back-arrow {
@@ -1585,7 +1708,9 @@ footer {
 
   .hero-grid,
   .home-showcase,
-  .feature-grid {
+  .feature-grid,
+  .home-focus-grid,
+  .project-overview {
     grid-template-columns: 1fr;
   }
 
@@ -1616,6 +1741,10 @@ footer {
   }
 
   .experience-card-top {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
     grid-template-columns: 1fr;
   }
 
