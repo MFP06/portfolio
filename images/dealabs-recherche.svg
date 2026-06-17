@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 665" role="img" aria-labelledby="title desc">
+  <title id="title">Interface Dealabs</title>
+  <desc id="desc">Capture stylisee de l'interface PowerShell de recherche Dealabs avec filtres, boutons et liste de promotions.</desc>
+  <rect width="1100" height="665" fill="#f1f1f1"/>
+  <rect x="0" y="0" width="1100" height="34" fill="#f6f6f6"/>
+  <rect x="10" y="9" width="14" height="14" fill="#e7c044" stroke="#777"/>
+  <rect x="14" y="13" width="14" height="14" fill="#51a7e8" stroke="#777"/>
+  <text x="36" y="22" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#111">Dealabs</text>
+  <text x="950" y="21" font-family="Segoe UI, Arial, sans-serif" font-size="18" fill="#111">-</text>
+  <rect x="1010" y="9" width="11" height="11" fill="none" stroke="#111" stroke-width="1.5"/>
+  <path d="M1070 9l12 12m0-12l-12 12" stroke="#111" stroke-width="1.4"/>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d2939">
+    <text x="26" y="72">Mots :</text>
+    <text x="438" y="72">Prix max :</text>
+    <text x="638" y="72">Hot min :</text>
+    <text x="826" y="72">Scan sec. :</text>
+  </g>
+
+  <g fill="#fff" stroke="#b9b9b9" stroke-width="2">
+    <rect x="100" y="56" width="310" height="24"/>
+    <rect x="525" y="56" width="85" height="24"/>
+    <rect x="724" y="56" width="74" height="24"/>
+    <rect x="924" y="56" width="73" height="24"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#101828">
+    <text x="102" y="74">iphone</text>
+    <text x="529" y="74">1500</text>
+    <text x="728" y="74">20</text>
+    <text x="928" y="74">300</text>
+  </g>
+
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16">
+    <rect x="24" y="103" width="137" height="28" fill="#f5f5f5" stroke="#333" stroke-width="2"/>
+    <rect x="29" y="107" width="127" height="20" fill="none" stroke="#555" stroke-width="1" stroke-dasharray="1.5 1.5"/>
+    <text x="64" y="123" fill="#111">Chercher</text>
+    <rect x="174" y="103" width="137" height="28" fill="#f5f5f5" stroke="#aaa"/>
+    <text x="214" y="123" fill="#111">Surveiller</text>
+    <rect x="324" y="103" width="112" height="28" fill="#f5f5f5" stroke="#cfcfcf"/>
+    <text x="361" y="123" fill="#a9a9a9">Ouvrir</text>
+  </g>
+
+  <rect x="24" y="153" width="1048" height="473" fill="#fbfbfb" stroke="#858585" stroke-width="2"/>
+  <g stroke="#d8d8d8" stroke-width="1">
+    <path d="M113 153v473M726 153v473M839 153v473M925 153v473"/>
+    <path d="M24 176h1048"/>
+    <path d="M24 200h1048M24 224h1048M24 248h1048M24 272h1048M24 296h1048M24 320h1048M24 344h1048M24 368h1048M24 392h1048M24 416h1048M24 440h1048M24 464h1048M24 488h1048M24 512h1048M24 536h1048M24 560h1048M24 584h1048M24 608h1048"/>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#1d2939">
+    <text x="30" y="170">Mot</text>
+    <text x="121" y="170">Titre</text>
+    <text x="733" y="170">Prix</text>
+    <text x="846" y="170">Hot</text>
+    <text x="932" y="170">URL</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif" font-size="15" fill="#0f172a">
+    <text x="30" y="194">iphone</text>
+    <text x="121" y="194">Smartphone 6,3&quot; Apple iPhone 17 Pro - 256 Go</text>
+    <text x="733" y="194">1199 EUR</text>
+    <text x="846" y="194">1799 deg</text>
+    <text x="932" y="194">https://www.dealabs.com/...</text>
+    <text x="30" y="218">iphone</text>
+    <text x="121" y="218">[Prime] Smartphone 6,3&quot; Apple iPhone 17 - 256 Go avec Promotion</text>
+    <text x="733" y="218">849 EUR</text>
+    <text x="846" y="218">1408 deg</text>
+    <text x="932" y="218">https://www.dealabs.com/...</text>
+    <text x="30" y="242">iphone</text>
+    <text x="121" y="242">Smartphone Apple iPhone 17 Pro 256 Go</text>
+    <text x="733" y="242">1199 EUR</text>
+    <text x="846" y="242">832 deg</text>
+    <text x="932" y="242">https://www.dealabs.com/...</text>
+    <text x="30" y="266">iphone</text>
+    <text x="121" y="266">Smartphone 6,5&quot; Apple iPhone Air 5G+ Noir sideral - 256 Go</text>
+    <text x="733" y="266">780.99 EUR</text>
+    <text x="846" y="266">811 deg</text>
+    <text x="932" y="266">https://www.dealabs.com/...</text>
+    <text x="30" y="290">iphone</text>
+    <text x="121" y="290">Chargeur induction Ugreen MagFlow iPhone 2 en 1 Qi</text>
+    <text x="733" y="290">26.98 EUR</text>
+    <text x="846" y="290">549 deg</text>
+    <text x="932" y="290">https://www.dealabs.com/...</text>
+    <text x="30" y="314">iphone</text>
+    <text x="121" y="314">Smartphone 6,9&quot; Apple iPhone 17 Pro Max 256 Go Orange cosmique</text>
+    <text x="733" y="314">1199 EUR</text>
+    <text x="846" y="314">523 deg</text>
+    <text x="932" y="314">https://www.dealabs.com/...</text>
+    <text x="30" y="338">iphone</text>
+    <text x="121" y="338">Coque Belkin SheerForce Grip pour iPhone 17 Pro Max</text>
+    <text x="733" y="338">17.99 EUR</text>
+    <text x="846" y="338">69 deg</text>
+    <text x="932" y="338">https://www.dealabs.com/...</text>
+    <text x="30" y="362">iphone</text>
+    <text x="121" y="362">Smartphone 6.3&quot; Apple iPhone 17 - 256 Go, Noir</text>
+    <text x="733" y="362">759 EUR</text>
+    <text x="846" y="362">68 deg</text>
+    <text x="932" y="362">https://www.dealabs.com/...</text>
+    <text x="30" y="386">iphone</text>
+    <text x="121" y="386">Smartphone Apple iPhone Air - 256 Go</text>
+    <text x="733" y="386">889 EUR</text>
+    <text x="846" y="386">46 deg</text>
+    <text x="932" y="386">https://www.dealabs.com/...</text>
+    <text x="30" y="410">iphone</text>
+    <text x="121" y="410">Chargeur induction magnetique INIU Qi2 15W Magsafe pour iPhone...</text>
+    <text x="733" y="410">11.62 EUR</text>
+    <text x="846" y="410">46 deg</text>
+    <text x="932" y="410">https://www.dealabs.com/...</text>
+  </g>
+  <line x1="48" y1="614" x2="920" y2="614" stroke="#838383" stroke-width="3"/>
+  <text x="26" y="659" font-family="Segoe UI, Arial, sans-serif" font-size="16" fill="#0f172a">Recherche...</text>
+</svg>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Script d'automatisation PowerShell (R405)</title>
+  <title>Surveillance Dealabs en PowerShell (R405)</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,9 +28,9 @@
   </a>
 
   <header class="page-header">
-    <h1>Script d'automatisation PowerShell (R405)</h1>
+    <h1>Surveillance Dealabs en PowerShell (R405)</h1>
     <div class="transparent-block">
-      <p>Projet en cours visant à créer un script d'automatisation utile dans un contexte professionnel.</p>
+      <p>Script PowerShell permettant de rechercher et de surveiller automatiquement les promotions Dealabs.</p>
     </div>
   </header>
 
@@ -39,13 +39,19 @@
     <img src="images/powershell.jfif" alt="PowerShell" style="width:250px; margin-bottom: 1.5rem; border-radius: 12px; border: 3px solid var(--accent); box-shadow: 0 0 12px var(--accent-light);" />
 
     <section style="font-size: 1.1rem; line-height: 1.8; text-align: justify; max-width: 700px; margin: auto;">
-      <p>Dans le cadre de la ressource R405, nous devons développer un script d'automatisation de notre choix. L'objectif est de partir d'un besoin concret, de l'analyser, puis de proposer une solution capable de faire gagner du temps ou de limiter les tâches répétitives.</p>
-      <p>Pour ce projet, l'idée est de concevoir un script PowerShell orienté entreprise. Le script doit répondre à une problématique utile : automatiser une action récurrente, faciliter une vérification système ou simplifier une tâche d'administration dans un environnement professionnel.</p>
-      <p>Ce projet est encore en cours, mais il me permet déjà de travailler une démarche complète : identification du besoin, choix des commandes, écriture du script, tests, amélioration progressive et réflexion sur l'utilité réelle de l'outil pour une organisation.</p>
+      <p>Dans le cadre de la ressource R405, j'ai développé une interface PowerShell dédiée à la recherche de promotions sur Dealabs. L'objectif est de gagner du temps dans la veille de bons plans en automatisant les recherches et en filtrant les résultats selon des critères simples.</p>
+      <p>L'interface permet de saisir des mots-clés, par exemple <strong>ssd</strong>, de définir un prix maximum ou de mettre <strong>0</strong> pour ne pas filtrer par prix, puis d'indiquer une température minimale avec le champ <strong>Hot min</strong>, par exemple 20 ou 100.</p>
+      <p>Le champ <strong>Scan sec.</strong> définit le délai entre deux scans automatiques, avec un minimum de 30 secondes. Le bouton <strong>Chercher</strong> lance une recherche une seule fois, tandis que <strong>Surveiller</strong> relance la recherche automatiquement et notifie lorsqu'une nouvelle promotion apparaît. Le bouton <strong>Ouvrir</strong> permet ensuite d'accéder à la promotion sélectionnée.</p>
+      <p>Ce projet m'a permis de travailler la création d'interface graphique en PowerShell, la récupération de données web, le filtrage des résultats et l'automatisation d'une tâche de veille.</p>
     </section>
 
+    <figure style="margin: 2.5rem auto 0; max-width: 900px;">
+      <img src="images/dealabs-recherche.svg" alt="Interface PowerShell de recherche Dealabs" style="width:100%; border-radius: 16px; border: 2px solid rgba(254, 180, 123, 0.48); box-shadow: 0 18px 40px rgba(0, 0, 0, 0.32); background: #f4f4f4;" />
+      <figcaption style="margin-top: 0.8rem; color: var(--muted); font-size: 0.95rem;">Interface de recherche et de surveillance des promotions Dealabs.</figcaption>
+    </figure>
+
     <section class="resource-links" style="margin-top: 2rem; max-width: 700px; margin-left: auto; margin-right: auto; text-align: left;">
-      <p style="color: var(--muted);">Projet en cours : le script final et les preuves seront ajoutés lorsque le livrable sera terminé.</p>
+      <p><a href="https://github.com/MFP06/Powershell" target="_blank" rel="noopener" style="color: var(--accent); font-weight: 600;">Voir le dépôt GitHub du projet PowerShell</a></p>
     </section>
 
     <h2 class="project-skills-title">Compétences mises en œuvre</h2>
